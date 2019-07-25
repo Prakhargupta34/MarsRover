@@ -1,6 +1,6 @@
 ﻿namespace MarsRover
 {
-    public class Mars : IPlanet
+    public class Mars
     {
         Coordinate maxSize;
     }

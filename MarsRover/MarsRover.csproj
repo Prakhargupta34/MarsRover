@@ -6,7 +6,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Class1.cs" />
+    <Compile Remove="ForwardAction.cs" />
+    <Compile Remove="Mars.cs" />
+    <Compile Remove="RotateAction.cs" />
+  </ItemGroup>
+
+ 
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="5.7.0" />
   </ItemGroup>
 
 </Project>

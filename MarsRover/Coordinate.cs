@@ -2,7 +2,7 @@
 {
     public class Coordinate
     {
-        int X { get; set; }
-        int Y { get; set; }
+        public int X { get; set; }
+        public int Y { get; set; }
     }
 }
