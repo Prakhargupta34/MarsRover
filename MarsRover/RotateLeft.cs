@@ -11,7 +11,7 @@ namespace MarsRover
             PositionVector updatedLocationVector = currentPositionVector;
 
             if ((int)updatedLocationVector.Direction == 0)
-                updatedLocationVector.Direction = (Direction)3;
+                updatedLocationVector.Direction = (Direction) 7;
             else
                 updatedLocationVector.Direction = (Direction)updatedLocationVector.Direction - 1;
 

@@ -6,7 +6,7 @@
         {
             PositionVector updatedLocationVector = currentPositionVector;
 
-            if ((int)updatedLocationVector.Direction == 3)
+            if ((int)updatedLocationVector.Direction == 7)
                 updatedLocationVector.Direction = (Direction)0;
             else
                 updatedLocationVector.Direction = (Direction)updatedLocationVector.Direction + 1;

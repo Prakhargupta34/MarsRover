@@ -6,9 +6,11 @@
         {
             PositionVector updatedPositionVector = currentPositionVector;
 
-            if (currentPositionVector.Coordinate.Y - 1 >= 0)
+           
                 updatedPositionVector.Coordinate.Y = currentPositionVector.Coordinate.Y - 1;
-            return updatedPositionVector;
+            if (updatedPositionVector.Coordinate.CheckBounds(maxCoordinateToRove) == false)
+                return updatedPositionVector;
+            return currentPositionVector;
 
         }
 

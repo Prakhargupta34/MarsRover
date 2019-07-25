@@ -44,7 +44,7 @@ namespace MarsRover.Tests
 
             rover.currentPositionVector.Coordinate.X.Should().Be(0);
             rover.currentPositionVector.Coordinate.Y.Should().Be(0);
-            rover.currentPositionVector.Direction.Should().Be(Direction.West);
+            rover.currentPositionVector.Direction.Should().Be(Direction.NorthWest);
 
         }
         [Fact]
@@ -61,7 +61,7 @@ namespace MarsRover.Tests
 
             rover.currentPositionVector.Coordinate.X.Should().Be(0);
             rover.currentPositionVector.Coordinate.Y.Should().Be(0);
-            rover.currentPositionVector.Direction.Should().Be(Direction.East);
+            rover.currentPositionVector.Direction.Should().Be(Direction.NorthEast);
 
         }
         [Fact]
@@ -130,9 +130,78 @@ namespace MarsRover.Tests
 
         }
 
+        [Fact]
+        public void Rover_can_step_forward_south_east_test()
+        {
+            Coordinate maxCoordinateToRove = new Coordinate() { X = 4, Y = 4 };
+            Coordinate initialCoordinate = new Coordinate() { X = 2, Y = 1 };
+            PositionVector currentPositionVector = new PositionVector() { Coordinate = initialCoordinate, Direction = Direction.SouthEast };
+
+            Rover rover = new Rover() { MaxCoordinateToRove = maxCoordinateToRove, currentPositionVector = currentPositionVector };
+
+            rover.Rove('F');
+
+            rover.currentPositionVector.Coordinate.X.Should().Be(3);
+            rover.currentPositionVector.Coordinate.Y.Should().Be(0);
+            rover.currentPositionVector.Direction.Should().Be(Direction.SouthEast);
+
+        }
+
+        [Fact]
+        public void Rover_can_step_forward_south_west_test()
+        {
+            Coordinate maxCoordinateToRove = new Coordinate() { X = 2, Y = 4 };
+            Coordinate initialCoordinate = new Coordinate() { X = 2, Y = 1 };
+            PositionVector currentPositionVector = new PositionVector() { Coordinate = initialCoordinate, Direction = Direction.SouthWest };
+
+            Rover rover = new Rover() { MaxCoordinateToRove = maxCoordinateToRove, currentPositionVector = currentPositionVector };
+
+            rover.Rove('F');
+
+            rover.currentPositionVector.Coordinate.X.Should().Be(1);
+            rover.currentPositionVector.Coordinate.Y.Should().Be(0);
+            rover.currentPositionVector.Direction.Should().Be(Direction.SouthWest);
+
+        }
+
+
+        [Fact]
+        public void Rover_can_step_forward_North_west_test()
+        {
+            Coordinate maxCoordinateToRove = new Coordinate() { X = 2, Y = 4 };
+            Coordinate initialCoordinate = new Coordinate() { X = 2, Y = 1 };
+            PositionVector currentPositionVector = new PositionVector() { Coordinate = initialCoordinate, Direction = Direction.NorthWest };
+
+            Rover rover = new Rover() { MaxCoordinateToRove = maxCoordinateToRove, currentPositionVector = currentPositionVector };
+
+            rover.Rove('F');
+
+            rover.currentPositionVector.Coordinate.X.Should().Be(1);
+            rover.currentPositionVector.Coordinate.Y.Should().Be(2);
+            rover.currentPositionVector.Direction.Should().Be(Direction.NorthWest);
+
+        }
+
+        [Fact]
+        public void Rover_can_step_forward_North_east_test()
+        {
+            Coordinate maxCoordinateToRove = new Coordinate() { X = 4, Y = 4 };
+            Coordinate initialCoordinate = new Coordinate() { X = 2, Y = 1 };
+            PositionVector currentPositionVector = new PositionVector() { Coordinate = initialCoordinate, Direction = Direction.NorthEast };
+
+            Rover rover = new Rover() { MaxCoordinateToRove = maxCoordinateToRove, currentPositionVector = currentPositionVector };
+
+            rover.Rove('F');
+
+            rover.currentPositionVector.Coordinate.X.Should().Be(3);
+            rover.currentPositionVector.Coordinate.Y.Should().Be(2);
+            rover.currentPositionVector.Direction.Should().Be(Direction.NorthEast);
+
+        }
+
         [Theory]
-        [InlineData(0, 0, 2, 3, Direction.East, 'R', 0, 0, Direction.South)]
-        [InlineData(1, 1, 2, 3, Direction.East, 'L', 1, 1, Direction.North)]
+        [InlineData(0, 0, 2, 3, Direction.East, 'R', 0, 0, Direction.SouthEast)]
+        [InlineData(1, 1, 2, 3, Direction.East, 'L', 1, 1, Direction.NorthEast)]
 
         public void Rover_can_rove_all_test(int initialX, int initialY, int maxX, int maxY, Direction initialDirection, char command, int expectedX, int expectedY, Direction expectedDirection)
         {
@@ -151,7 +220,7 @@ namespace MarsRover.Tests
         [Fact]
         public void Rover_can_take_multiple_commands()
         {
-            Coordinate maxCoordinateToRove = new Coordinate() { X = 2, Y = 4 };
+            Coordinate maxCoordinateToRove = new Coordinate() { X = 4, Y = 4 };
             Coordinate initialCoordinate = new Coordinate() { X = 0, Y = 0 };
             PositionVector currentPositionVector = new PositionVector() { Coordinate = initialCoordinate, Direction = Direction.East };
 
@@ -159,9 +228,9 @@ namespace MarsRover.Tests
 
             RoveMultipleCommands("FFLFRR",ref rover);
 
-            rover.currentPositionVector.Coordinate.X.Should().Be(2);
+            rover.currentPositionVector.Coordinate.X.Should().Be(3);
             rover.currentPositionVector.Coordinate.Y.Should().Be(1);
-            rover.currentPositionVector.Direction.Should().Be(Direction.South);
+            rover.currentPositionVector.Direction.Should().Be(Direction.SouthEast);
         }
 
 

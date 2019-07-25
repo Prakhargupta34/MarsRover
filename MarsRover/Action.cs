@@ -11,6 +11,10 @@ namespace MarsRover
             {Direction.West , new StepForwardWest() },
             {Direction.North , new StepForwardNorth() },
             {Direction.South , new StepForwardSouth() },
+            {Direction.NorthEast , new StepForwardNorthEast() },
+            {Direction.SouthWest , new StepForwardSouthWest() },
+            {Direction.NorthWest , new StepForwardNorthWest() },
+            {Direction.SouthEast , new StepForwardSouthEast() }
 
         };
         public Dictionary<char, IRotate> RotateDict = new Dictionary<char, IRotate>()
