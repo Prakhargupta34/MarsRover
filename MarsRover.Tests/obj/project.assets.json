@@ -1734,6 +1734,7 @@
       "type": "package",
       "path": "fluentassertions/5.7.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "fluentassertions.5.7.0.nupkg.sha512",
         "fluentassertions.nuspec",
@@ -1762,6 +1763,7 @@
       "type": "package",
       "path": "microsoft.codecoverage/15.9.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "build/netstandard1.0/CodeCoverage/CodeCoverage.config",
         "build/netstandard1.0/CodeCoverage/CodeCoverage.exe",
@@ -1854,6 +1856,7 @@
       "type": "package",
       "path": "microsoft.dotnet.platformabstractions/1.0.3",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/.DS_Store",
         "lib/net451/Microsoft.DotNet.PlatformAbstractions.dll",
@@ -1867,6 +1870,7 @@
       "type": "package",
       "path": "microsoft.extensions.dependencymodel/1.0.3",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/.DS_Store",
         "lib/net451/Microsoft.Extensions.DependencyModel.dll",
@@ -1881,6 +1885,7 @@
       "type": "package",
       "path": "microsoft.net.test.sdk/15.9.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "build/net45/Microsoft.Net.Test.Sdk.props",
         "build/net45/Microsoft.Net.Test.Sdk.targets",
@@ -2237,6 +2242,7 @@
       "type": "package",
       "path": "microsoft.testplatform.objectmodel/15.9.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net451/Microsoft.TestPlatform.CoreUtilities.dll",
         "lib/net451/Microsoft.TestPlatform.PlatformAbstractions.dll",
@@ -2308,6 +2314,7 @@
       "type": "package",
       "path": "microsoft.testplatform.testhost/15.9.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "ThirdPartyNotices.txt",
         "build/uap10.0/Microsoft.TestPlatform.TestHost.props",
@@ -3168,6 +3175,7 @@
       "type": "package",
       "path": "system.configuration.configurationmanager/4.4.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -3309,6 +3317,7 @@
       "type": "package",
       "path": "system.diagnostics.textwritertracelistener/4.0.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
@@ -4969,6 +4978,7 @@
       "type": "package",
       "path": "system.security.cryptography.protecteddata/4.4.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -5762,6 +5772,7 @@
       "type": "package",
       "path": "xunit/2.4.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "xunit.2.4.0.nupkg.sha512",
         "xunit.nuspec"
@@ -5772,6 +5783,7 @@
       "type": "package",
       "path": "xunit.abstractions/2.0.2",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net35/xunit.abstractions.dll",
         "lib/net35/xunit.abstractions.xml",
@@ -5788,6 +5800,7 @@
       "type": "package",
       "path": "xunit.analyzers/0.10.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "analyzers/dotnet/cs/xunit.analyzers.dll",
         "tools/install.ps1",
@@ -5801,6 +5814,7 @@
       "type": "package",
       "path": "xunit.assert/2.4.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/netstandard1.1/xunit.assert.dll",
         "lib/netstandard1.1/xunit.assert.xml",
@@ -5815,6 +5829,7 @@
       "type": "package",
       "path": "xunit.core/2.4.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "build/xunit.core.props",
         "build/xunit.core.targets",
@@ -5829,6 +5844,7 @@
       "type": "package",
       "path": "xunit.extensibility.core/2.4.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net452/xunit.core.dll",
         "lib/net452/xunit.core.dll.tdnet",
@@ -5848,6 +5864,7 @@
       "type": "package",
       "path": "xunit.extensibility.execution/2.4.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net452/xunit.execution.desktop.dll",
         "lib/net452/xunit.execution.desktop.xml",
@@ -5864,6 +5881,7 @@
       "type": "package",
       "path": "xunit.runner.visualstudio/2.4.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "build/_common/xunit.abstractions.dll",
         "build/_common/xunit.runner.reporters.net452.dll",

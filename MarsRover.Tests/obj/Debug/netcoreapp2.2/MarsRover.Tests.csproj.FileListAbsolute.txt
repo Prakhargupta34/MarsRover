@@ -11,6 +11,6 @@ C:\Users\pgupta\source\repos\MarsRover\MarsRover.Tests\bin\Debug\netcoreapp2.2\M
 C:\Users\pgupta\source\repos\MarsRover\MarsRover.Tests\bin\Debug\netcoreapp2.2\MarsRover.Tests.pdb
 C:\Users\pgupta\source\repos\MarsRover\MarsRover.Tests\bin\Debug\netcoreapp2.2\MarsRover.dll
 C:\Users\pgupta\source\repos\MarsRover\MarsRover.Tests\bin\Debug\netcoreapp2.2\MarsRover.pdb
-C:\Users\pgupta\source\repos\MarsRover\MarsRover.Tests\obj\Debug\netcoreapp2.2\MarsRover.Tests.csprojResolveAssemblyReference.cache
 C:\Users\pgupta\source\repos\MarsRover\MarsRover.Tests\obj\Debug\netcoreapp2.2\MarsRover.Tests.dll
 C:\Users\pgupta\source\repos\MarsRover\MarsRover.Tests\obj\Debug\netcoreapp2.2\MarsRover.Tests.pdb
+C:\Users\pgupta\source\repos\MarsRover\MarsRover.Tests\obj\Debug\netcoreapp2.2\MarsRover.Tests.csprojResolveAssemblyReference.cache
